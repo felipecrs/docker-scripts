@@ -5,7 +5,7 @@ set -euxo pipefail
 script_dir=$(dirname "$0")
 readonly script_dir
 
-cd "${script_dir}/.."
+cd "${script_dir}/../scripts"
 
 docker_cmd=(docker run --rm -v "${PWD}:${PWD}" -w "${PWD}" -e VERBOSE -e DEBUG)
 
